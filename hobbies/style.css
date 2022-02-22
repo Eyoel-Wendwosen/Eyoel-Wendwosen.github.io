@@ -1,9 +1,10 @@
 
 body{
-    font-size: small;
+    font-size: medium;
 }
 
 .MainImageSection {
+
     display: flex;
     justify-content: center;
     width: 90vw;
@@ -37,11 +38,16 @@ body{
     margin-top: 15%;
 }
 .CenterImages {
-    margin-top: 25%;
+    margin-top: 10%;
     display: grid;
     row-gap: 50px;
     column-gap: 10%;
     grid-template-columns: 1fr 1fr ;
+}
+
+.CenterImageWide {
+    width: 70%;
+    margin:  5% auto;
 }
 
 .ImageWrapper:nth-child(2n) {
@@ -50,13 +56,12 @@ body{
 }
 
 .ImageWrapper{
-    box-shadow: 0 0 1px 0 black;
-    width: 100%;
-    grid-column: 1;
     position: relative;
 }
 
 .ImageWrapper img {
+    box-shadow: 0 0 1px 0 black;
+
     width: 100%;
 }
 
@@ -89,6 +94,7 @@ body{
   .text {
     color: white;
     position: absolute;
+    font-size: larger;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -105,6 +111,9 @@ body{
   @media only screen and (max-width: 425px) {
     .CenterImages {
         display: block;
+    }
+    .CenterImages .ImageWrapper {
+        margin-top: 15%;
     }
 
 }
