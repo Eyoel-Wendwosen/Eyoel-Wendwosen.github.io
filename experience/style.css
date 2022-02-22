@@ -1,0 +1,111 @@
+.Experience-EducationContent a {
+    color: blue
+}
+ .Experience-EducationContent {
+    font-size: 1.2em;
+}
+
+.Header {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.Experience-Wrapper:nth-child(odd) {
+    padding: 5% 0;
+    background-color: rgba(211, 211, 211, 0.5);
+    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 95%);
+}
+.Education-Wrapper:nth-child(2n) {
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 3% 0;
+    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+}
+.Experience {
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.Experience:nth-child(even)>.ExperienceContent {
+    flex-direction: row-reverse;
+}
+
+.WhereAbout {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CompanyHeader {
+    margin-top: 5px;
+    display: block;
+}
+
+.keyword {
+    font-weight: bolder;
+    font-size: 102%;
+}
+
+.ExperienceContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ExperienceText {
+    flex: 1;
+    /* font-size: .75em; */
+    display: flex;
+    font-weight: lighter;
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 5%;
+}
+
+.ExperienceImage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+}
+.ExperienceImage img {
+    width: 100%;
+}
+
+.RelevantCoursework {
+    font-size: medium;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .ExperienceContent {
+        display: block;
+    }
+
+    .ExperienceImage {
+        margin: 0 auto;
+    }
+
+    .Experience-Education-Wrapper:nth-child(odd) {
+        padding: 5% 0;
+        clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .MainTextContent {
+        top: 30vh;
+    }
+
+    .ExperienceContent {
+        text-align: left;
+    }
+
+    .MainImageContent {
+        background-position-y: 25%;
+    }
+}
