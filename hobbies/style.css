@@ -112,6 +112,11 @@ body{
     .CenterImages {
         display: block;
     }
+
+    .CenterImageWide {
+        width: 100%;
+    }
+
     .CenterImages .ImageWrapper {
         margin-top: 15%;
     }
