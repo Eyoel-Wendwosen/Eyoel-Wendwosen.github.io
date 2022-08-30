@@ -74,9 +74,15 @@
 }
 
 .RelevantCoursework {
+    display: flex;
+    justify-content: space-between;
     font-size: medium;
-}
 
+}
+.CertificationImage > img {
+    margin-left: 20px;
+    height: 250px;
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
